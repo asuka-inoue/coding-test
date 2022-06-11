@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.c-section-header {
+  width: fit-content;
+  text-align: center;
+}
+
+.c-section-header__entitle {
+  font-size: rem(32);
+  font-weight: $bold;
+  text-transform: uppercase;
+  line-height: 1;
+  @include mq(md) {
+    font-size: rem(48);
+  }
+}
+
+.c-section-header__title {
+  font-size: rem(16);
+  font-weight: $regular;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px solid #005700;
+  line-height: 1;
+  margin-top: rem(10);
+  padding-bottom: rem(3);
+  @include mq(md) {
+    font-size: rem(24);
+    margin-top: rem(16);
+  }
+}

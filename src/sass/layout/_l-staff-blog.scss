@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-staff-blog {
+  padding-top: rem(47);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(132);
+  }
+}

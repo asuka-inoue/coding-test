@@ -1,0 +1,135 @@
+@use "global" as *;
+
+.p-item {
+  display: block;
+  max-width: rem(320);
+  width: 100%;
+  margin: auto;
+  border-radius: rem(10);
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+  @include mq(md) {
+    max-width: calc((100% - #{rem(20)} * 2) / 3);
+  }
+}
+
+.p-item + .p-item {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-item__img {
+  position: relative;
+  padding-top: 62.5%;
+}
+
+.p-item__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: rem(10) rem(10) 0 0;
+}
+
+.p-item__body {
+  position: relative;
+  background: $white;
+  padding: rem(20) rem(20) rem(22) rem(60);
+  border-radius: 0 0 rem(10) rem(10);
+  color: $black;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.p-item__body::before {
+  content: "";
+  position: absolute;
+  background: $brown;
+  width: rem(50);
+  height: 100%;
+  border-radius: 0 0 0 rem(10);
+  top: 0;
+  left: 0;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.p-item__title {
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $brown;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.p-item__text {
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.448em;
+  margin-top: rem(9);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.p-item__body--green {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.p-item__body--green::before {
+  background: #6E6B5C;
+}
+
+.p-item__body--green::after {
+  background: #6E6B5C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transform: scale(1, 0);
+  transform-origin: left top;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -1;
+}
+
+.p-item__title--green {
+  color: #6E6B5C;
+  text-align: center;
+}
+
+.p-item:hover .p-item__body {
+  background: $brown;
+  color: $white;
+}
+
+.p-item:hover .p-item__body::before {
+  background: $white;
+}
+
+.p-item:hover .p-item__title {
+  color: $white;
+}
+
+.p-item:hover .p-item__body--green {
+  background: $white;
+}
+
+.p-item:hover .p-item__body--green::before {
+  background: #6E6B5C;
+}
+
+.p-item:hover .p-item__body--green::after {
+  transform: scale(1, 1);
+}

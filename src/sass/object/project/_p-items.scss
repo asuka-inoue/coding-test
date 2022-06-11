@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.p-items {
+  @include mq(md) {
+    max-width: rem(1000);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(20);
+  }
+}

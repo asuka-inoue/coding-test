@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.p-staff-blog {
+  background: linear-gradient(180deg,#fff 0%,#fff 139px,rgba($brown, .6) 139px,rgba($brown, .6) 100%);
+  @include mq(md) {
+    background: linear-gradient(180deg,#fff 0%,#fff 39.5%,rgba($brown, .6) 39.5%,rgba($brown, .6) 80%,#fff 80%, #fff 100%);
+  }
+}
+
+.p-staff-blog__title {
+  margin: auto;
+}
+
+.p-staff-blog__text {
+  margin-top: rem(38);
+  @include mq(md) {
+    margin-top: rem(31);
+  }
+}
+
+.p-staff-blog__items {
+  margin-top: rem(37);
+  @include mq(md) {
+    margin-top: rem(29);
+  }
+}
+
+.p-staff-blog__button {
+  margin-top: rem(43);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

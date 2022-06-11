@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.c-button {
+  display: inline-block;
+  font-size: rem(24);
+  font-weight: $bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background: $btn-gray;
+  padding: rem(10) rem(80);
+  border-radius: rem(20);
+  @include mq(md) {
+    font-size: rem(32);
+    padding: rem(9) rem(100);
+  }
+}
+
+.c-button:hover {
+  background: $white;
+  color: $btn-gray;
+  border: 2px solid $btn-gray;
+  padding: rem(8) rem(80);
+  @include mq(md) {
+    padding: rem(7) rem(100);
+  }
+}
+
+.c-button--white {
+  color: $btn-gray;
+  background: $white;
+  border: 2px solid $btn-gray;
+  padding: rem(8) rem(78);
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+  @include mq(md) {
+    padding: rem(8) rem(98);
+  }
+}
+
+.c-button--white:hover {
+  transform: translateY(-5px);
+  color: $white;
+  background: $btn-gray;
+}
