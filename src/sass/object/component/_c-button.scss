@@ -41,4 +41,7 @@
   transform: translateY(-5px);
   color: $white;
   background: $btn-gray;
+  @include mq(md) {
+    margin-bottom: rem(2);
+  }
 }

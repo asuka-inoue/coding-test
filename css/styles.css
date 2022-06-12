@@ -283,6 +283,11 @@ select::-ms-expand {
   color: #F7F7F7;
   background: #4D4D4D;
 }
+@media screen and (min-width: 768px) {
+  .c-button--white:hover {
+    margin-bottom: 0.125rem;
+  }
+}
 
 .c-section-header {
   width: -webkit-fit-content;
