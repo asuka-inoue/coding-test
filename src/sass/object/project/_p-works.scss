@@ -30,6 +30,7 @@
   margin-top: rem(18);
   @include mq(md) {
     margin-top: rem(77);
+    margin-left: 0;
   }
 }
 

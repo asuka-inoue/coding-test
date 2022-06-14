@@ -885,6 +885,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-works__swiper {
     margin-top: 4.8125rem;
+    margin-left: 0;
   }
 }
 
