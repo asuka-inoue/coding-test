@@ -333,7 +333,7 @@ select::-ms-expand {
   text-align: center;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.448em;
+  line-height: 1.448125;
 }
 @media screen and (min-width: 768px) {
   .c-text {
@@ -526,7 +526,7 @@ select::-ms-expand {
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.448em;
+  line-height: 1.448125;
   margin-top: 9px;
   margin-top: 0.5625rem;
   display: -webkit-box;
@@ -666,7 +666,7 @@ select::-ms-expand {
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.448em;
+  line-height: 1.448125;
   margin-top: 9px;
   margin-top: 0.5625rem;
   display: -webkit-box;

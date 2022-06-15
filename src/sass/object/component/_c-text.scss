@@ -3,7 +3,7 @@
 .c-text {
   text-align: center;
   font-size: rem(16);
-  line-height: 1.448em;
+  line-height: 1.448125;
   @include mq(md) {
     max-width: rem(537);
     width: 100%;
