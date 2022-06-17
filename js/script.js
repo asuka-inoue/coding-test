@@ -16,10 +16,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // swiper
   let swiper = new Swiper('.swiper', {
-    loop: true,
-    loopAdditionalSlides: 6,
-    freeMode: true,
-    slidesPerView: "auto",
+    slidesPerView: 1.2,
+    centeredSlides: true,
     spaceBetween: 15,
     autoplay: {
       delay: 0,
@@ -28,11 +26,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     speed: 3000,
     breakpoints: {
       1440: {
+        loop: true,
         slidesPerView:4,
         centeredSlides: true,
         spaceBetween: 40,
       },
       768: {
+        loop: true,
         slidesPerView:3.5,
         centeredSlides: true,
         spaceBetween: 40,

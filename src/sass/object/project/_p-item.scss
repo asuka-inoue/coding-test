@@ -2,21 +2,8 @@
 
 .p-item {
   display: block;
-  max-width: rem(320);
-  width: 100%;
-  margin: auto;
   border-radius: rem(10);
   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
-  @include mq(md) {
-    max-width: calc((100% - #{rem(20)} * 2) / 3);
-  }
-}
-
-.p-item + .p-item {
-  margin-top: rem(30);
-  @include mq(md) {
-    margin-top: 0;
-  }
 }
 
 .p-item__img {

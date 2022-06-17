@@ -2,29 +2,8 @@
 
 .p-card {
   display: block;
-  max-width: rem(296);
-  width: 100%;
-  margin: auto;
   border-radius: rem(10);
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
-  @include mq(md) {
-    max-width: calc((100% - #{rem(56)} * 2) / 3);
-    margin: 0;
-  }
-}
-
-.p-card + .p-card {
-  margin-top: rem(19);
-  @include mq(md) {
-    margin-top: 0;
-  }
-}
-
-.p-card--staffblog + .p-card--staffblog {
-  margin-top: rem(40);
-  @include mq(md) {
-    margin-top: 0;
-  }
 }
 
 .p-card__img {
@@ -32,7 +11,7 @@
   padding-top: 74.3243243%;
 }
 
-.p-card--staffblog .p-card__img {
+.p-card__img--staffblog {
   padding-top: 67.5675676%;
 }
 
@@ -122,7 +101,7 @@
   }
 }
 
-.p-card--staffblog .p-card__text {
+.p-card__text--saffblog {
   @include mq(md) {
     -webkit-line-clamp: 3;
   }

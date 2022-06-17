@@ -19,14 +19,14 @@
 }
 
 .p-blog__items {
-  margin-top: rem(17);
+  margin-top: rem(18);
   @include mq(md) {
     margin-top: rem(44);
   }
 }
 
 .p-blog__button {
-  margin-top: rem(18);
+  margin-top: rem(20);
   text-align: center;
   @include mq(md) {
     margin-top: rem(57);

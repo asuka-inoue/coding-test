@@ -7,13 +7,6 @@
   }
 }
 
-.p-works__inner {
-  padding-top: rem(16);
-  @include mq(md) {
-    padding-top: rem(152);
-  }
-}
-
 .p-works__title {
   margin-left: auto;
 }
@@ -26,20 +19,13 @@
 }
 
 .p-works__swiper {
-  margin-left: rem(27);
   margin-top: rem(18);
   @include mq(md) {
     margin-top: rem(77);
-    margin-left: 0;
   }
 }
 
 .p-works__slide {
-  margin-top: 0;
-  max-width: rem(320);
-}
-
-.p-works__slide + .p-works__slide {
   margin-top: 0;
 }
 
